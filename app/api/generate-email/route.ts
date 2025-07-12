@@ -33,7 +33,7 @@ async function handler(req: NextRequest) {
 
     // Make direct API call to OpenRouter with a timeout
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 25000); // Reduced to 25 seconds to ensure we stay within Vercel limits
+    const timeoutId = setTimeout(() => controller.abort(), 25000); 
 
     const response = await fetch(
       "https://openrouter.ai/api/v1/chat/completions",
