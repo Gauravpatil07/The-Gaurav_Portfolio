@@ -41,7 +41,7 @@ async function handler(req: NextRequest) {
         method: "POST",
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-          "HTTP-Referer": "http://localhost:3000",
+          "HTTP-Referer": "https://www.thegaurav.me/",
           "X-Title": "Gaurav's Portfolio",
           "Content-Type": "application/json",
         },
