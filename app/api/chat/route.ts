@@ -18,6 +18,7 @@ function isAllowedOrigin(origin: string | null) {
   const allowedOrigins = [
     "http://localhost:3000",
     "https://www.thegaurav.com",
+    "https://www.thegaurav.me",
 
     // Include localhost for development(uncomment for development)
     // "http://localhost:3000",
