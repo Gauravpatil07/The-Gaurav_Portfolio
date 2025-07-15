@@ -16,7 +16,6 @@ import { queryVectorStore } from "@/lib/embeddings";
 // Add CORS check middleware
 function isAllowedOrigin(origin: string | null) {
   const allowedOrigins = [
-    "http://localhost:3000",
     "https://www.thegaurav.com",
     "https://www.thegaurav.me/",
 
