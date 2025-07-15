@@ -1,4 +1,4 @@
-# Rushikesh Nimkar's Portfolio
+# Gaurav Patil's Portfolio
 
 A modern portfolio website built with Next.js 15, featuring AI chat integration and interactive animations.
 

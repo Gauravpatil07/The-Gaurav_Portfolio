@@ -17,7 +17,7 @@ import { queryVectorStore } from "@/lib/embeddings";
 function isAllowedOrigin(origin: string | null) {
   const allowedOrigins = [
     "http://localhost:3000",
-    "https://www.rushikeshnimkar.xyz",
+    "https://www.thegaurav.com",
 
     // Include localhost for development(uncomment for development)
     // "http://localhost:3000",
@@ -227,7 +227,7 @@ class OpenRouterChatModel extends ChatOpenAI {
           headers: {
             Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
             "HTTP-Referer": "http://localhost:3000",
-            "X-Title": "Rushikesh's Portfolio",
+            "X-Title": "Gaurav's Portfolio",
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
@@ -315,15 +315,15 @@ function generateStructuredResponse(queryType: string): string {
   // Define individual contact templates
   const contactTemplates: Record<string, any> = {
     email_contact: {
-      email: "rushikeshnimkar396@gmail.com",
+      email: "lt.gauravpatil@gmail.com",
       type: "Email",
     },
     phone_contact: {
-      phone: "+919322675715",
+      phone: "+918208412113",
       type: "Phone",
     },
     location_contact: {
-      location: "Nagpur",
+      location: "Jalgaon",
       type: "Location",
     },
   };
@@ -333,7 +333,7 @@ function generateStructuredResponse(queryType: string): string {
     resume_link: [
       {
         title: "Resume",
-        url: "https://rushikeshnimkar.xyz/resume",
+        url: "https://www.thegaurav.me/resume",
         description:
           "View my detailed resume with skills, experience, and education",
       },
@@ -341,7 +341,7 @@ function generateStructuredResponse(queryType: string): string {
     github_link: [
       {
         title: "GitHub Profile",
-        url: "https://github.com/Rushikeshnimkar",
+        url: "https://github.com/Gauravpatil07",
         description:
           "Check out my code repositories and open-source contributions",
       },
@@ -349,32 +349,32 @@ function generateStructuredResponse(queryType: string): string {
     linkedin_link: [
       {
         title: "LinkedIn Profile",
-        url: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
+        url: "https://www.linkedin.com/in/gauravpatil07/",
         description: "Connect with me professionally on LinkedIn",
       },
     ],
     portfolio_link: [
       {
         title: "Portfolio Website",
-        url: "https://rushikeshnimkar.xyz",
+        url: "https://thegaurav.me",
         description: "My personal portfolio showcasing projects and skills",
       },
     ],
     project_links: [
       {
-        title: "Gitsplit Project",
-        url: "https://ethglobal.com/showcase/gitsplit-pkp5d",
-        description: "Funding platform for open-source projects",
+        title: "Codeflex Project",
+        url: "https://github.com/Gauravpatil07/Codeflex-AI-Fitness-Assistant",
+        description: "AI-powered personalized fitness and nutrition assistant",
       },
       {
-        title: "Cryptorage Project",
-        url: "https://dorahacks.io/buidl/16435",
-        description: "Chrome extension for secure data storage",
+        title: "CodeSync Project",
+        url: "https://github.com/Gauravpatil07/Remote-Interview-Platform",
+        description: "Remote interview platform with video calling and live coding",
       },
       {
-        title: "Terminal AI Assistant",
-        url: "https://www.npmjs.com/package/terminal-ai-assistant",
-        description: "CLI tool for natural language command conversion",
+        title: "CodeCraft Project",
+        url: "https://github.com/Gauravpatil07/CodeCraft-The-Code-Editor",
+        description: "Real-time collaborative multi-language online code editor",
       },
     ],
   };
@@ -454,44 +454,44 @@ function generateStructuredResponse(queryType: string): string {
       },
     ],
     contact: {
-      email: "rushikeshnimkar396@gmail.com",
-      phone: "+919322675715",
+      email: "lt.gauravpatil@gmail.com",
+      phone: "+918208412113",
       location: "Nagpur",
-      linkedin: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
-      github: "https://github.com/Rushikeshnimkar",
-      portfolio: "https://rushikeshnimkar.xyz/",
+      linkedin: "https://www.linkedin.com/in/gauravpatil07/",
+      github: "https://github.com/Gauravpatil07",
+      portfolio: "https://www.thegaurav.me/",
     },
     awards: [
       {
-        title: "Solana Radar Hackathon 2024",
+        title: "IIT Bombay - National Entrepreneurship Challenge 2023 Finalists",
         description:
-          "Achieved 4th place out of 200+ global teams, demonstrating expertise in blockchain technology and innovative problem-solving.",
+          "Achieved 8th place out of 50+ National teams, We refined ideas, pitched to experts, and grew exponentially, showcasing innovative problem-solving.",
       },
       {
-        title: "Sui Overflow 2024",
+        title: "Google Cloud - Gen AI Study Jam 2024",
         description:
-          "Awarded the Community Favorite Award for Mystic Tarot, an innovative Web3 tarot reading platform on the Sui Network.",
+          "Awarded for Excellence in GenAI innovation—Optimized Vertex AI prompts, built GenAI apps with Gemini & Streamlit, ranked top 5% in an AI challenge, and completed a 30-day GenAI program.",
       },
     ],
     links: [
       {
         title: "Portfolio Website",
-        url: "https://rushikeshnimkar.xyz",
+        url: "https://www.thegaurav.me/",
         description: "My personal portfolio showcasing projects and skills",
       },
       {
         title: "Resume",
-        url: "https://rushikeshnimkar.xyz/resume",
+        url: "https://www.thegaurav.me/resume",
         description: "View my detailed resume",
       },
       {
         title: "GitHub Profile",
-        url: "https://github.com/Rushikeshnimkar",
+        url: "https://github.com/Gauravpatil07",
         description: "Check out my code repositories and contributions",
       },
       {
         title: "LinkedIn",
-        url: "https://www.linkedin.com/in/rushikesh-nimkar-0961361ba/",
+        url: "https://www.linkedin.com/in/gauravpatil07/",
         description: "Connect with me professionally",
       },
       {
@@ -656,7 +656,7 @@ export async function POST(req: Request) {
         }
 
         // Modify system prompt based on whether structured data will be added
-        let systemContent = `You are Rushikesh Nimkar, a full-stack developer with expertise in Java, React.js, Next.js, and MySQL.`;
+        let systemContent = `You are Gaurav Patil, a full-stack developer with expertise in Java, React.js, Next.js, and MySQL.`;
 
         if (willHaveStructuredData) {
           // For queries that will have structured data, instruct the model to be brief
@@ -700,7 +700,7 @@ export async function POST(req: Request) {
         }
 
         systemContent += `\n\nRules:
-        1. Speak as Rushikesh using "I" and "my"
+        1. Speak as Gaurav using "I" and "my"
         2. Keep responses concise and focused
         3. If unsure about specific details, say "Feel free to contact me directly for more information"
         4. Use web search results when provided for up-to-date information

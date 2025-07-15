@@ -101,10 +101,10 @@ export default function Projects() {
       keywords: SEO.keywords,
       mainEntity: {
         "@type": "Person",
-        name: "Rushikesh Nimkar",
-        url: "https://github.com/Rushikeshnimkar",
+        name: "Gaurav Patil",
+        url: "https://github.com/Gauravpatil07",
         sameAs: [
-          "https://github.com/Rushikeshnimkar",
+          "https://www.thegaurav.me/",
           // Add other social profiles if available
         ],
       },
@@ -357,7 +357,7 @@ export default function Projects() {
                 <div className="relative aspect-[16/9] sm:aspect-[16/7] max-w-2xl mx-auto rounded-md overflow-hidden group">
                   <Image
                     src={projects[activeProject].media.src}
-                    alt={`${projects[activeProject].title} - Portfolio Project by Rushikesh Nimkar`}
+                    alt={`${projects[activeProject].title} - Portfolio Project by Gaurav Patil`}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />

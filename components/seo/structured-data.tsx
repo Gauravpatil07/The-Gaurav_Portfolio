@@ -6,8 +6,8 @@ export function PersonSchema() {
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Rushikesh Nimkar",
-          url: "https://rushikeshnimkar.com",
+          name: "Gaurav Patil",
+          url: "https://thegaurav.com",
           sameAs: [
             "https://github.com/Gauravpatil07",
             "https://www.linkedin.com/in/gauravpatil07/",

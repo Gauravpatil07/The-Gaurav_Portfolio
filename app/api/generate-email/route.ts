@@ -42,7 +42,7 @@ async function handler(req: NextRequest) {
         headers: {
           Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
           "HTTP-Referer": "http://localhost:3000",
-          "X-Title": "Rushikesh's Portfolio",
+          "X-Title": "Gaurav's Portfolio",
           "Content-Type": "application/json",
         },
         body: JSON.stringify({

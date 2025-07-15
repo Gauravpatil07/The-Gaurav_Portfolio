@@ -5,7 +5,7 @@ Full-Stack Engineer
 Location: Jalgaon
 Phone: +918208412113
 Email: gauravpatilop@gail.com
-Portfolio: https://rushikeshnimkar.xyz/
+Portfolio: https://www.thegaurav.me/
 GitHub: https://github.com/Gauravpatil07
 LinkedIn: https://www.linkedin.com/in/gauravpatil07/
 resume: http://localhost:3000/resume
